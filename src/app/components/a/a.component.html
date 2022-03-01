@@ -1,0 +1,17 @@
+    <mat-card id="carte">
+        <mat-form-field>
+          <h3>Kilogramme</h3>
+      <input matInput name="kg" type="text" [(ngModel)]="kg" (input)="kgToLbs()"> 
+      <button *ngIf="kg || lbs" matSuffix mat-icon-button aria-label="Clear" (click)="kg = 0 || lbs = 0">
+      </button>
+    </mat-form-field>
+    
+
+    <mat-form-field> 
+        <h3>Livres</h3>
+      <input matInput name="lbs" [(ngModel)]="lbs" (input)="lbsToKg()">
+      <button *ngIf="lbs || kg" matSuffix mat-icon-button aria-label="Clear" (click)="lbs = 0 || kg = 0">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </mat-card>

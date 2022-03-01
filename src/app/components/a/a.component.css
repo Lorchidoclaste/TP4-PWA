@@ -1,0 +1,9 @@
+#carte{
+  display:flex;
+  justify-content: center;
+}
+
+mat-form-field{
+  justify-content: center;
+
+}
